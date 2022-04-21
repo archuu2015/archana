@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/Elite.webp">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Hotel Management</title>
+    <script>
+        $(document).ready
+            (function () {
+                $('[data-toggle="tooltip"]').tooltip();
+
+            });
+    </script>
+    <script>
+        $(document).ready
+            (function () {
+                $('[data-toggle="popover"]').popover();
+
+            });
+    </script>
+</head>
+<style>
+    #home {
+        padding-top: 100px;
+        height: 500px;
+
+    }
+
+    .ab {
+        height: 500px;
+        color: #fff; 
+        background: url(images/20.jpg);
+        margin-top: -20px;
+
+    }
+
+    .affix {
+        top: 0;
+        width: 100%;
+    }
+
+    .affix+.container {
+        padding-top: 100px;
+    }
+    .navbar{
+        z-index: 4;
+    }
+</style>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="container" style="height:100px;">
+
+        <h1 style="text-align:center"><img src="images/00.jpg" height="50px">&nbsp;HOTEL ELITE</h1>
+
+    </div>
+
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="150">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                
+            </div>
+
+            <div>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+
+                       
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#facilities">Facilities & Services</a></li>
+                        <li><a href="#tr">Tariff & Reservation</a></li>
+                        <li><a href="#contactus">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="ab"><br><br><br><br><br><br><br>
+        <h1 style="text-align:center;color:black"><b>Welcome to Hotel Elite</b></h1><br><br>
+
+
+        <div class="container-fluid" id="home">
+
+
+            <div class="text-center">
+                <a href="#">
+                    <button type="button" class="btn btn-danger"> Explore More</button></a>
+            </div>
+        </div>
+    </div>
+    <!---------About-------->
+
+    <div class="container-fluid" id="about">
+        <br>
+        <h1 style="text-align: center; color:black"><strong>About Us</strong></h1>
+        <br>
+        <ul class="breadcrumb">
+            <li class="active"><a href="#">Accommodation Near Tourist Places</a></li>
+            <li><a href="#">Best Place To Stay</a></li>
+            <li class="disabled"><a href="#">Choose Traditional Hotels</a></li>
+            <li><a href="#">Villa</a></li>
+
+        </ul><br><br>
+
+        <h2 style="text-align:center"><b>About Hotel Elite</b></h2>
+        <p style="text-align:center"><em>Tourists who travel and reach faraway
+                places always find it hard
+                to get accustomed to the culture of distinct places.
+                Living along with<br> the natives, in their own houses and environment,
+                helps travelers to know the lifestyle, language, cuisines,<br>
+                religion, and every aspect of the local culture, in the best way possible.</em></p>
+        <br><br>
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-sm-6 " style="text-align:center"><br><br>
+                    <h4> Provides you with Quality accommodation ideal for leisure and business<br>
+                        travelers. Indra Niwas is the captivating leisure destination in itself,<br>
+                        offering a myriad of
+                        services and facilities to experience<br> our
+                        truly enriching surroundings.</h4><br>
+                    <h4>To pamper the guests with
+                        ultimate comfort, luxury, and <br>pleasure, We offer multifarious services.</h4>
+                    <br>
+                    <button class="btn btn-danger" data-toggle="modal" data-target="#mymodal" data-toggle="tooltip"
+                        title="Click to register">
+                        Register</button>
+                    <div class="modal" id="mymodal" role="dialog">
+                        <div class="modal-dialog ">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" data-dismiss="modal">&times;</button>
+                                    <h2 class="modal-title">Fill Your Details</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <div class=" text-center">
+                                        <img src="images/Window.jpg" style="width:550px; height:200px"><br><br>
+                                        <form action="">
+                                            <label>Name</label>
+                                            <input style="width:300px" type="name" name="name" placeholder="Name"
+                                                data-toggle="popover" data-trigger="hover"
+                                                data-content="Enter your full name here" data-placement="top"><br><br>
+                                            <label>Email address</label>
+                                            <input style="width:250px" type="email" name="email" placeholder="Email"
+                                                data-toggle="popover" data-trigger="hover"
+                                                data-content="Your email must contain '@' Example:abc1@gmail.com"
+                                                data-placement="top"><br><br>
+
+                                            <label>Create Password</label>
+                                            <input style="width:230px" type="password" name="password"
+                                                placeholder="Password" data-toggle="popover" data-trigger="hover"
+                                                data-content="Must be at least 6 characters long,
+                         and contain at least one number, one uppercase and one lowercase letter."
+                                                data-placement="top"><br><br>
+                                            <label>Re-enter Password</label>
+                                            <input style="width:220px" type="password" name="password"
+                                                placeholder="Password" data-toggle="popover" data-trigger="hover"
+                                                data-content="Must be at least 6 characters long,
+                        and contain at least one number, one uppercase and one lowercase letter."
+                                                data-placement="top"><br><br>
+
+
+
+                                            <button type="button" class="btn btn-info"
+                                                data-dismiss="modal">Submit</button>
+                                            <br>
+                                        </form>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button data-dismiss="modal">Close</button>
+                                    <button class="btn btn-primary" type="button">Save Changes</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="col-sm-6 ">
+                    <img src="images/images.jpg" style="width: 400px; height: 250px" class="img-thumbnail">
+                </div>
+            </div>
+        </div><br><br>
+    </div>
+    <br>
+    <!---------facilities------------->
+    <div class="container-fluid" id="facilities">
+        <h1 style="text-align: center;">Facilities & Services</h1>
+
+        <div class="color"><br><br>
+            <h2 style="text-align: center;">Facilities & Services at Indra Niwas</h2>
+            <p style="text-align: center;">Indra Niwas offers a wide array of services and facilities for
+                our guests to make sure their stay is as relaxing as possible.<br> Our Home Stay offers well-appointed
+                AC guest
+                room accommodation, swimming pool, free Wi-Fi,<br> business & recreation facilities at a very affordable
+                price.</p>
+            <br><br>
+            <table class="table">
+                <tr>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-cutlery"
+                            style="font-size:50px;"></span><br>Roof Top Restaurant</th>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-ok"
+                            style="font-size:50px;"></span><br>Laundry</th>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-phone-alt"
+                            style="font-size:50px;"></span><br>STD/ISD Calls</th>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-plane"
+                            style="font-size:50px;"></span><br>Travel Desk</th>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-signal"
+                            style="font-size:50px;"></span><br>Free Wi-fi</th>
+                </tr>
+                <tr>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-ok"
+                            style="font-size:50px;"></span><br>Swimming Pool</th>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-briefcase"
+                            style="font-size:50px;"></span><br>Doctor</th>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-bell"
+                            style="font-size:50px;"></span><br>24x7 Help Desk, Reception</th>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-ok-circle"
+                            style="font-size:50px;"></span><br>Vehicle Parking</th>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-list-alt"
+                            style="font-size:50px;"></span><br>Special Request</th>
+                </tr>
+                <tr>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-hourglass"
+                            style="font-size:50px;"></span><br>24hr Room Service</th>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-usd"
+                            style="font-size:50px;"></span><br>Money Exchange</th>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-check"
+                            style="font-size:50px;"></span><br>Daily Housekeeping</th>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-lock"
+                            style="font-size:50px;"></span><br>Safe deposit locker</th>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-credit-card"
+                            style="font-size:50px;"></span><br>Credit/debit card acceptable</th>
+                </tr>
+                <tr>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-thumbs-up"
+                            style="font-size:50px;"></span><br>AC</th>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-ok"
+                            style="font-size:50px;"></span><br>Freeze</th>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-ok-circle"
+                            style="font-size:50px;"></span><br>Left luggage room</th>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-transfer"
+                            style="font-size:50px;"></span><br>Online payment facility</th>
+                    <th style="text-align:center"><span class="glyphicon glyphicon-ok-sign"
+                            style="font-size:50px;"></span><br>Public rest room</th>
+                </tr>
+
+            </table>
+            <br><br>
+
+
+            <div class="text-center">
+                <a href="#">
+                    <button type="button" class="btn btn-info btn-block"> Book Now</button></a>
+            </div>
+        </div><br><br><br>
+        <div class="container-fluid" style="margin-left:80px;">
+            <div class="row">
+
+                <div class="col-sm-4 ">
+                    <img class="img-circle" src="images/04.jpg" alt="image" height="250" width="340">
+                </div>
+                <div class="col-sm-4 ">
+                    <img class="img-circle" src="images/11.jpg" alt="image" height="250" width="340">
+                </div>
+                <div class="col-sm-4 ">
+                    <img class="img-circle" src="images/611.jpg" alt="image" height="250" width="340">
+                </div>
+            </div><br>
+        </div>
+        <br><br>
+    </div>
+    <!-------t&r------->
+    <div class="container-fluid" id="tr">
+        <h1 style="text-align: center;">Tariff & Reservation</h1>
+        <br><br><br><br>
+        <div class="container-fluid" style="margin-left:80px;">
+            <div class="row">
+
+                <div class="col-sm-4 ">
+                    <img class="img-rounded" src="images/24.jpeg" alt="image" height="250" width="340">
+                    <h3>JUNIOR SUITE</h3>
+                    <h3><code>From - $150</code>
+                        <span class="badge">Lowest Price</span>
+                    </h3>
+                </div>
+                <div class="col-sm-4 ">
+                    <img class="img-rounded" src="images/30.jpg" alt="image" height="250" width="340">
+                    <h3>STANDARD ROOM</h3>
+                    <h3><code>From - $250</code>
+                        <span class="badge">Lowest Price</span>
+                    </h3>
+                </div>
+                <div class="col-sm-4 ">
+                    <img class="img-rounded" src="images/340.jpg" alt="image" height="250" width="340">
+                    <h3>SUPERIOR ROOM</h3>
+                    <h3><code>From - $350</code>
+                        <span class="badge">Lowest Price</span>
+                    </h3>
+                </div>
+            </div><br>
+        </div>
+
+        <div class="container-fluid" style="margin-left:20px;">
+            <div class="row">
+
+                <div class="col-sm-6 ">
+                    <div style=" text-align: center; width:600px; height:462px">
+                        <br><br>
+                        <p><b>NOTE:</b><br><br>
+                            1. Extra person would be charged as per the above.<br>
+                            2. Standard check in time is 12:00 Noon and
+                            check out time is 10:00 Morning.<br>
+                            3. Room tariff are on EP (Room Only) per day basis.<br>
+                            4. Kids up to Six (6) years are complimentary in parent’s room <br>
+                            without extra bed.<br>
+                            5. Child from 7 yrs to 12 yrs can stay in the same room with an<br>
+                            additional cost of Rs 1000.<br><br>
+                            <strong>DOCUMENTATION:</strong> <br><br>
+                            As per Government of India Regulations which is non-negotiable<BR>
+                            we need the following from each Guest in ORIGINAL on check in time:<br><br>
+
+                            1. For Foreigners & Persons of Indian Origin holding foreign passports –
+                            Passports along with a valid Indian Visa.<br>
+                            2. For Indians – Driving License or Aadhar Card or Voter ID Card.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div style="border:1px solid; text-align: center; ">
+                        <div class="im">
+                            <div><br>
+                                <label>Name: </label>
+                                <input style="width:300px" type="text" name="text" placeholder="Name"><br><br>
+                                <label>Email Id: </label>
+                                <input style="width:285px" type="email" name="email" placeholder="Email"><br><br>
+                                <label>Subject: </label>
+                                <input style="width:289px" type="text" name="text" placeholder="Subject"><br><br>
+                                <label>Date: </label>
+                                <input style="width:309px" type="date" name="date"><br><br>
+                                <label>Adults: </label>
+                                <input style="width:296px" type="number" name="quan" value="" min="1" max="100"
+                                    placeholder="Adults"><br><br>
+                                <label>Kids: </label>
+                                <input style="width:310px" type="number" name="quan" value="" min="1" max="100"
+                                    placeholder="Kids"><br><br>
+                                <label>Description: </label>
+                                <textarea style="width:265px" type="comment" name="text" rows="4"
+                                    placeholder="Description"></textarea><br><br>
+
+                                <button class="btn btn-info" data-toggle="modal" data-target="#mymodal">Submit</button>
+                                <div class="modal" id="mymodal" role="dialog">
+                                    <div class="modal-dialog ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+
+                                                <button class="close" data-dismiss="modal">&times;</button>
+                                                <h3 class="modal-title">Your Query Has Been Received</h3>
+
+                                                <h3> <span class="label label-success">
+                                                        Successfully
+                                                    </span></h3><br>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Thank you for showing your interest </p>
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-------contact us------>
+    <div class="container-fluid" id="contactus">
+        <h1 style="text-align: center;"><strong>Contact Us</strong></h1>
+        <br><br><br>
+        <table class="table">
+            <tr><br>
+                <th style="text-align:center"><span class="glyphicon glyphicon-phone"
+                        style="font-size:40px;"></span><br><br> <span class="label label-danger">
+                        Contact Us</span><br> <br>7235463521<br>8978653456<br>7653745234</th>
+
+                <th style="text-align:center"><span class="glyphicon glyphicon-envelope"
+                        style="font-size:40px;"></span><br><br> <span class="label label-primary">
+                        Email Id</span><br><br>info@hotelelite.com<br>resv@hotelelite.com</th>
+
+                <th style="text-align:center"><span class="glyphicon glyphicon-home"
+                        style="font-size:40px;"></span><br><br> <span class="label label-success">
+                        Hotel Elite</span><br><br>Punjab, <br>147203</th>
+
+
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+<footer class="footer-copyright text-center ">&copy; 2022 Hotel Elite</footer>
+</body>
